@@ -58,7 +58,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:foregroundGravity="center"
-                android:onClick="invitado"
+                android:onClick="invitar"
                 android:text="Invitado"
                 android:textColor="@android:color/background_light" />
 

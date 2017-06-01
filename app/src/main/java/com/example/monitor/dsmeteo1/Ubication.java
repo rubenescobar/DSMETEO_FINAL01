@@ -138,18 +138,42 @@ public class Ubication extends AppCompatActivity implements AdapterView.OnItemSe
 
         Button boton_buscar = (Button)findViewById(R.id.boton_buscar_usuario);
 
-        boton_buscar.setOnClickListener(new View.OnClickListener() {
+        Intent x=getIntent();
+           Bundle b= x.getExtras();
+        String logeado =b.getString("logeado");
 
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(Ubication.this, InvitadoActivity.class));
-
-            }
-
-        });
+        if (logeado.equals("si")){
 
 
+
+            boton_buscar.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+
+                    startActivity(new Intent(Ubication.this, URegistradoActivity.class));
+
+                }
+
+            });
+
+
+        }else if (logeado.equals("no")){
+
+
+            boton_buscar.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+
+                    startActivity(new Intent(Ubication.this, InvitadoActivity.class));
+
+                }
+
+            });
+
+
+        }
 
         /*
         Toast.makeText(

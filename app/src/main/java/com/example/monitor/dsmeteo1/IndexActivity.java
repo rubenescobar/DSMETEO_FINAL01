@@ -38,12 +38,21 @@ public class IndexActivity extends AppCompatActivity {
         });
 
 
+
+
+
+
+    }
+
+    public void invitar(View v) {
+
         Button invitado = (Button) findViewById(R.id.invitado);
+
         invitado.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(IndexActivity.this, Ubication.class));
+                startActivity(new Intent(IndexActivity.this, Ubication.class).putExtra("logeado","no"));
 
             }
 

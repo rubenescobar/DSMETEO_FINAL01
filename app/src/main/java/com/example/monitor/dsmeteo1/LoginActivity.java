@@ -28,9 +28,26 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        }
+    }
+
+
+    public void iniciar(View v) {
+
+        Button ingresar = (Button) findViewById(R.id.ingresar);
+
+        ingresar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(LoginActivity.this, Ubication.class).putExtra("logeado","si"));
+
+            }
+
+        });
 
     }
+}
 
 
 

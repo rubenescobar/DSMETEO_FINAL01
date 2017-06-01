@@ -37,10 +37,12 @@ public class URegistradoActivity extends AppCompatActivity {
         imageViewIconos_Mañana=(ImageView)this.findViewById(R.id.imageViewIconos_Mañana);
         imageViewIconosPasadoMañana=(ImageView)this.findViewById(R.id.imageViewIconosPasadoMañana);
 
+        cargar();
+
     }
 
 
-    public void cargar(View v){
+    public void cargar(){
         URegistradoActivity.Ciudad com=new Ciudad();
         Temperatura temperatura_asignacion = new Temperatura();
         Precipitaciones precipitaciones=new Precipitaciones();

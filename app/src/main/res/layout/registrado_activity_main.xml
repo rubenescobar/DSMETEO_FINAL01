@@ -16,15 +16,6 @@
         android:layout_below="@+id/Ciudad"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="cargar"
-        android:text="MOSTRAR"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:id="@+id/Ciudad"
         android:layout_width="wrap_content"
@@ -54,9 +45,10 @@
         android:id="@+id/imageViewIconos_Mañana"
         android:layout_width="104dp"
         android:layout_height="104dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="90dp"
         app:srcCompat="@drawable/icono0"
-        android:layout_above="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/MinMax"
         android:layout_toStartOf="@+id/MinMax" />
 
     <ImageView
